@@ -1,11 +1,11 @@
 import Brackets from "@/components/Brackets";
 
 const INDUSTRIES = [
-  { no: "01", title: "자동차", desc: "부품 조립, 검사, 이송 공정을 자동화해 생산 속도와 품질 일관성을 높입니다." },
-  { no: "02", title: "반도체", desc: "정밀 검사, 클린 공정 이송, 미세 결함 검출에 특화된 자동화 시스템을 구축합니다." },
-  { no: "03", title: "물류", desc: "분류, 피킹, 출고 공정을 자동화해 처리량과 공간 효율을 획기적으로 개선합니다." },
-  { no: "04", title: "식품", desc: "위생 기준과 반복 흐름에 맞춘 포장, 검사 자동화 솔루션을 제공합니다." },
-  { no: "05", title: "배터리", desc: "고속 생산, 정밀 검사가 중요한 공정에 맞춘 자동화 환경을 설계합니다." },
+  { no: "01", title: "자동차", desc: "부품 조립, 검사, 이송 공정에 로봇과 컨베이어를 적용합니다." },
+  { no: "02", title: "반도체", desc: "클린룸 환경에서 웨이퍼·부품 이송과 정밀 검사 설비를 구성합니다." },
+  { no: "03", title: "물류", desc: "분류, 피킹, 출고 공정에 컨베이어와 로봇 피킹 시스템을 적용합니다." },
+  { no: "04", title: "식품", desc: "위생 기준에 맞춘 포장 라인과 비전검사 설비를 구성합니다." },
+  { no: "05", title: "배터리", desc: "셀·모듈 조립 공정에 이송 로봇과 검사 설비를 적용합니다." },
 ];
 
 export default function Industries() {
@@ -13,18 +13,16 @@ export default function Industries() {
     <section id="industries" className="py-24 md:py-32 px-6 md:px-10 bg-base border-t border-border">
       <div className="max-w-[1440px] mx-auto">
         <div className="mb-16 lg:mb-20 reveal">
-          <div className="flex items-center gap-3 text-accent font-mono text-xs tracking-widest mb-6 font-semibold">
-            <span className="w-2 h-2 rounded-full bg-accent shadow-[0_0_8px_rgba(230,30,42,0.3)]" />
-            <span className="decode-text" data-value="03. INDUSTRIES">
-              03. INDUSTRIES
-            </span>
+          <div className="flex items-center gap-3 text-accent text-xs tracking-widest mb-6 font-semibold">
+            <span className="w-2 h-2 rounded-full bg-accent" />
+            <span>적용 산업</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-6 tracking-tight">
-            산업별 공정 조건에 맞춘 자동화 경험
+            산업별 공정 조건에 맞춰 설비를 구성합니다
           </h2>
           <p className="text-muted max-w-xl font-normal border-l border-border pl-6">
-            자동화는 산업마다 다르게 설계되어야 합니다. 넥스모션은 생산품, 속도,
-            품질 기준을 고려해 최적의 구조를 제안합니다.
+            생산품과 공정 특성에 따라 필요한 자동화 요소가 다릅니다. 업종별 공정
+            조건을 확인하고 설비를 구성합니다.
           </p>
         </div>
 

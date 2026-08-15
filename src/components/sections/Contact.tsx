@@ -17,31 +17,23 @@ export default function Contact() {
     <section id="contact" className="py-24 md:py-32 px-6 md:px-10 bg-base-alt relative border-t border-border">
       <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-16 lg:gap-20 items-start">
         <div className="reveal">
-          <div className="flex items-center gap-3 text-accent font-mono text-xs tracking-widest mb-6 font-semibold">
-            <span className="decode-text" data-value="08. CONSULTATION">
-              08. CONSULTATION
-            </span>
+          <div className="flex items-center gap-3 text-accent text-xs tracking-widest mb-6 font-semibold">
+            <span>문의</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-primary mb-10 leading-[1.1] tracking-tight">
-            당신의 생산라인을
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-primary mb-10 leading-[1.2] tracking-tight">
+            자동화 설비 구축 및 시스템
             <br />
-            분석해드립니다
+            적용에 대해 문의해 주세요
           </h2>
           <p className="text-muted text-base sm:text-lg font-normal leading-relaxed mb-12 border-l border-border pl-6">
-            반복 작업, 품질 편차, 인력 부담이 있는 공정이라면 넥스모션이 자동화
-            가능성을 진단해드립니다. 현장의 조건을 바탕으로 최적의 전략을
-            제안합니다.
+            현장 조건과 필요한 공정을 확인한 뒤 적용 가능한 구성안을
+            검토해드립니다. 문의 내용은 담당 엔지니어가 확인 후 안내드립니다.
           </p>
 
           <div className="p-8 bg-surface border border-border relative spotlight-card group shadow-sm">
-            <div className="absolute left-0 top-0 w-1 h-full bg-accent shadow-[0_0_8px_rgba(230,30,42,0.3)]" />
+            <div className="absolute left-0 top-0 w-1 h-full bg-accent" />
             <div className="spotlight-content">
-              <i className="ph ph-quotes text-3xl text-accent/50 mb-4 block" />
-              <p className="text-primary leading-relaxed font-medium">
-                &quot;넥스모션은 고객의 생산 환경과 목표를 먼저 이해합니다. 문의
-                내용을 남겨주시면 담당 엔지니어가 검토 후 안내드립니다.&quot;
-              </p>
-              <div className="flex flex-wrap gap-4 mt-8">
+              <div className="flex flex-wrap gap-4">
                 <button className="tech-bracket bg-transparent border border-border text-primary px-6 py-3 font-bold text-xs uppercase tracking-widest flex items-center gap-3 hover-target hover:border-accent hover:text-accent transition-colors">
                   <Brackets />
                   <i className="ph ph-file-pdf text-lg" /> 회사소개서 다운로드
@@ -53,15 +45,6 @@ export default function Contact() {
 
         <div className="bg-surface p-6 sm:p-10 border border-border spotlight-card reveal delay-200 shadow-sm">
           <div className="spotlight-content">
-            <div className="flex justify-between items-center mb-8 pb-4 border-b border-border">
-              <span className="font-mono text-[10px] text-accent tracking-widest font-semibold">SECURE_CONNECTION</span>
-              <div className="flex gap-1">
-                <span className="w-1 h-3 bg-accent animate-pulse" />
-                <span className="w-1 h-3 bg-accent animate-pulse delay-75" />
-                <span className="w-1 h-3 bg-accent animate-pulse delay-150" />
-              </div>
-            </div>
-
             {submitted ? (
               <div className="py-16 text-center">
                 <i className="ph ph-check-circle text-5xl text-accent mb-6 block" />

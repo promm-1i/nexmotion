@@ -22,9 +22,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "넥스모션 | Automation Beyond Limits",
+  title: "넥스모션 | 산업용 로봇 자동화 시스템",
   description:
-    "넥스모션은 로봇 자동화, AI Vision, 스마트팩토리 시스템을 통합해 제조와 물류 현장의 생산성과 품질을 함께 끌어올립니다.",
+    "넥스모션은 산업용 로봇, 비전검사, 물류 및 제어시스템을 공정 조건에 맞춰 설계하고 구축합니다.",
 };
 
 export default function RootLayout({

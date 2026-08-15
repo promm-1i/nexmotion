@@ -3,12 +3,11 @@
 import { useState } from "react";
 
 const NAV_LINKS = [
-  { href: "#about", label: "About" },
-  { href: "#solutions", label: "Solutions" },
-  { href: "#products", label: "Products" },
-  { href: "#industries", label: "Industries" },
-  { href: "#case-studies", label: "Case Studies" },
-  { href: "#technology", label: "Technology" },
+  { href: "#about", label: "회사소개" },
+  { href: "#solutions", label: "솔루션" },
+  { href: "#products", label: "장비·기술" },
+  { href: "#industries", label: "적용산업" },
+  { href: "#case-studies", label: "구축사례" },
 ];
 
 export default function Header() {
@@ -41,11 +40,13 @@ export default function Header() {
           </nav>
         </div>
 
-        <div className="flex items-center gap-4 md:gap-10">
-          <div className="hidden md:flex font-mono text-[10px] tracking-widest text-muted uppercase items-center gap-3 bg-surface px-4 py-2 border border-border rounded-sm shadow-sm">
-            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.5)]" />
-            SYSTEM_STATUS: OPERATIONAL // 2026_EDITION
-          </div>
+        <div className="flex items-center gap-4 md:gap-6">
+          <a
+            href="#contact"
+            className="hidden md:inline-flex items-center bg-primary text-white px-5 py-2.5 text-xs font-bold tracking-widest hover-target hover:bg-accent transition-colors"
+          >
+            견적 문의
+          </a>
           <button
             className="text-primary text-2xl hover:text-accent transition-colors hover-target xl:hidden"
             id="menu-btn"
@@ -70,6 +71,13 @@ export default function Header() {
               {link.label}
             </a>
           ))}
+          <a
+            href="#contact"
+            onClick={() => setMenuOpen(false)}
+            className="py-3 text-sm font-bold text-accent"
+          >
+            견적 문의
+          </a>
         </nav>
       )}
     </header>

@@ -1,19 +1,15 @@
 const FOOTER_LINKS = [
   {
     title: "Company",
-    links: ["회사소개", "솔루션", "기술역량"],
+    links: ["회사소개", "솔루션", "장비·기술"],
   },
   {
-    title: "Resources",
-    links: ["제품", "구축사례", "기술문의"],
+    title: "Business",
+    links: ["적용산업", "구축사례", "문의"],
   },
   {
     title: "Legal",
-    links: ["개인정보처리방침", "이용약관", "공고"],
-  },
-  {
-    title: "Social",
-    links: ["LinkedIn", "Youtube"],
+    links: ["개인정보처리방침", "이용약관"],
   },
 ];
 
@@ -37,11 +33,11 @@ export default function Footer() {
               </p>
             </div>
             <div className="text-primary text-sm font-bold tracking-tight font-sans">
-              생산 현장의 다음 움직임을 설계합니다.
+              산업용 로봇 자동화 설비를 설계·제작·설치합니다.
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-10 sm:gap-16 uppercase font-semibold">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-10 sm:gap-16 uppercase font-semibold">
             {FOOTER_LINKS.map((group) => (
               <div className="space-y-4" key={group.title}>
                 <h5 className="text-primary mb-6 border-b border-border pb-2 inline-block">{group.title}</h5>
@@ -58,11 +54,10 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between pt-10 border-t border-border gap-6 text-[9px] font-semibold">
           <div className="space-y-2">
             <p className="text-muted">© 2026 NEXMOTION CO., LTD. ALL RIGHTS RESERVED.</p>
-            <p className="text-accent">INDUSTRIAL AUTOMATION ARCHITECTURE V4.02</p>
           </div>
           <div className="md:text-right space-y-2 text-muted">
-            <p>HEADQUARTERS: SEOUL, KOREA</p>
-            <p>SUPPORT: CONTACT@NEXMOTION.COM</p>
+            <p>SEOUL, KOREA</p>
+            <p>CONTACT@NEXMOTION.COM</p>
           </div>
         </div>
       </div>
